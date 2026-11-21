@@ -1,0 +1,11 @@
+{
+  "example": "Fictional Pineharbor Labs, U-362; not a client case",
+  "input": {
+    "provider": "topclick",
+    "deliverable": "contact_list",
+    "qualificationRule": "Fictional Pineharbor ICP-v1; review industry and role fit only",
+    "reviewOwnerRole": "Internal research reviewer (fictional role)",
+    "evidenceRef": "Synthetic contact-sample reference U362-S1",
+    "exclusion": "No outreach, meeting booking or sales-acceptance decision"
+  }
+}

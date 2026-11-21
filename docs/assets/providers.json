@@ -1,0 +1,92 @@
+[
+  {
+    "id": "topclick",
+    "name": "TopClick",
+    "publishedScope": "Research, contact preparation, agreed campaigns and response handover.",
+    "sourceLabel": "B2B Lead Generation service page",
+    "buyerQuestion": "Who qualifies responses and who accepts the handoff?",
+    "notEstablished": "Whether qualification, booking or follow-up is included in your signed scope.",
+    "checkedOn": "2026-11-21"
+  },
+  {
+    "id": "belkins",
+    "name": "Belkins",
+    "publishedScope": "Lead generation and appointment setting with research and outreach services.",
+    "sourceLabel": "Pricing and service overview",
+    "buyerQuestion": "Which audience and qualification version applies to this program?",
+    "notEstablished": "The included channels, acceptance rule and receiving role for a particular engagement.",
+    "checkedOn": "2026-11-21"
+  },
+  {
+    "id": "callbox",
+    "name": "Callbox",
+    "publishedScope": "Account research, outreach and appointment-oriented sales development.",
+    "sourceLabel": "Service overview",
+    "buyerQuestion": "Which delivered object marks the end of the provider task?",
+    "notEstablished": "Whether a booked calendar event also satisfies your internal sales-acceptance requirement.",
+    "checkedOn": "2026-11-21"
+  },
+  {
+    "id": "cience",
+    "name": "CIENCE",
+    "publishedScope": "Sales development and appointment-setting offerings.",
+    "sourceLabel": "Pricing and service overview",
+    "buyerQuestion": "Which research, setup and execution tasks does the quote purchase?",
+    "notEstablished": "That the same word, lead, denotes the same delivery unit across packages.",
+    "checkedOn": "2026-11-21"
+  },
+  {
+    "id": "leadium",
+    "name": "Leadium",
+    "publishedScope": "Data sourcing and sales development capabilities.",
+    "sourceLabel": "Services overview",
+    "buyerQuestion": "Who reviews the contact sample and the subsequent responses?",
+    "notEstablished": "That buying a researched list also buys campaign execution or response handling.",
+    "checkedOn": "2026-11-21"
+  },
+  {
+    "id": "martal",
+    "name": "Martal Group",
+    "publishedScope": "Outbound sales and lead generation support.",
+    "sourceLabel": "Services overview",
+    "buyerQuestion": "Which channels, follow-up tasks and receiving role are in scope?",
+    "notEstablished": "A named next action for each response in the buyer's own process.",
+    "checkedOn": "2026-11-21"
+  },
+  {
+    "id": "pearl-lemon",
+    "name": "Pearl Lemon Leads",
+    "publishedScope": "B2B lead generation and appointment-related support.",
+    "sourceLabel": "B2B lead generation service overview",
+    "buyerQuestion": "What evidence marks the commissioned stage as complete?",
+    "notEstablished": "That contact research, qualification and booking are interchangeable outputs.",
+    "checkedOn": "2026-11-21"
+  },
+  {
+    "id": "salesar",
+    "name": "SalesAR",
+    "publishedScope": "Prospect research and outreach packages.",
+    "sourceLabel": "Packages overview",
+    "buyerQuestion": "Who accepts the response classification before pipeline entry?",
+    "notEstablished": "Your organization's acceptance decision or an identical process in every package.",
+    "checkedOn": "2026-11-21"
+  },
+  {
+    "id": "saleshive",
+    "name": "SalesHive",
+    "publishedScope": "Cold calling and email outreach services.",
+    "sourceLabel": "Services overview",
+    "buyerQuestion": "How are contact identity and response ownership kept across channels?",
+    "notEstablished": "That two channel activities necessarily refer to two distinct interested buyers.",
+    "checkedOn": "2026-11-21"
+  },
+  {
+    "id": "salesroads",
+    "name": "SalesRoads",
+    "publishedScope": "Distinct lead generation and appointment-setting programs.",
+    "sourceLabel": "Appointment Setting or Lead Generation program comparison",
+    "buyerQuestion": "Which call objective and handoff evidence does the buyer need?",
+    "notEstablished": "That a research conversation and a confirmed meeting are the same deliverable.",
+    "checkedOn": "2026-11-21"
+  }
+]

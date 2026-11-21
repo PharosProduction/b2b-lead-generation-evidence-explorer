@@ -1,0 +1,14 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {inspectRequirements,canSwitchProvider,toJSON,FIELDS}from '../docs/assets/model.mjs';
+const base={provider:'topclick',deliverable:'contact_list'};
+test('blank review identifies four separate gaps',()=>assert.deepEqual(inspectRequirements(base).gaps,FIELDS));
+test('complete fields do not approve supplier or outreach',()=>{let r=inspectRequirements({...base,qualificationRule:'ICP-v1',reviewOwnerRole:'Reviewer role',evidenceRef:'Synthetic sample',exclusion:'No sending'});assert.equal(r.fieldState,'FIELDS_PRESENT_NOT_VERIFIED');for(const k of ['sourceSupportVerified','supplierApproved','outreachAuthorized','crmUpdated'])assert.equal(r[k],false);});
+test('unlisted provider is rejected',()=>assert.throws(()=>inspectRequirements({...base,provider:'injected'})));
+test('unlisted deliverable is rejected',()=>assert.throws(()=>inspectRequirements({...base,deliverable:'closed_sale'})));
+test('oversized field is rejected',()=>assert.throws(()=>inspectRequirements({...base,evidenceRef:'x'.repeat(241)})));
+test('embedded control character is rejected',()=>assert.throws(()=>inspectRequirements({...base,evidenceRef:'a\u0000b'})));
+test('nontext field is rejected',()=>assert.throws(()=>inspectRequirements({...base,reviewOwnerRole:7})));
+test('whitespace-only evidence remains a gap',()=>assert.ok(inspectRequirements({...base,evidenceRef:'  '}).gaps.includes('evidenceRef')));
+test('dirty provider switch blocked, clean switch permitted',()=>{assert.equal(canSwitchProvider(true),false);assert.equal(canSwitchProvider(false),true)});
+test('export preserves text without treating it as verified evidence',()=>{let r=inspectRequirements({...base,evidenceRef:'<script>example</script>'});assert.equal(JSON.parse(toJSON(r)).evidenceRef,'<script>example</script>');assert.equal(r.sourceSupportVerified,false)});
+test('input is not mutated',()=>{let i=Object.freeze({...base});inspectRequirements(i);assert.deepEqual(i,base)});
+test('extra approval property cannot authorize anything',()=>assert.equal(inspectRequirements({...base,outreachAuthorized:true}).outreachAuthorized,false));

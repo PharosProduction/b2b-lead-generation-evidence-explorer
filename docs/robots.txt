@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pharosproduction.github.io/b2b-lead-generation-evidence-explorer/sitemap.xml
